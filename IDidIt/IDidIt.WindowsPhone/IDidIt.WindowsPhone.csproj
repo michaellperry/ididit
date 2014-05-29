@@ -80,13 +80,14 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="HTTPConfigurationProvider.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SynchronizationService.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -106,6 +107,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UpdateControls">
+      <HintPath>..\..\packages\UpdateControls.2.3.1.0\lib\wpa81\UpdateControls.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence">
+      <HintPath>..\..\packages\Correspondence.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence.BinaryHTTPClient">
+      <HintPath>..\..\packages\Correspondence.App.Core.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.BinaryHTTPClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence.BinaryHTTPClient.Notifications">
+      <HintPath>..\..\packages\Correspondence.App.Core.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.BinaryHTTPClient.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence.Data">
+      <HintPath>..\..\packages\Correspondence.App.Core.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence.FileStream">
+      <HintPath>..\..\packages\Correspondence.App.Core.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.FileStream.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.Correspondence.Memory">
+      <HintPath>..\..\packages\Correspondence.App.Core.2.2.1.0\lib\wpa81\UpdateControls.Correspondence.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="UpdateControls.XAML">
+      <HintPath>..\..\packages\UpdateControls.2.3.1.0\lib\wpa81\UpdateControls.XAML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IDidIt.Model\IDidIt.Model.csproj">
+      <Project>{17db98d5-75f7-4f16-a4b6-b25fc9ba0868}</Project>
+      <Name>IDidIt.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
