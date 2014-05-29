@@ -41,8 +41,17 @@ namespace IDidIt
                 Synchronize();
             };
 
+            // Synchronize when the network becomes available.
+            bool networkAvailable = NetworkInterface.GetIsNetworkAvailable();
+            System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged += (sender, e) =>
+            {
+                if (NetworkInterface.GetIsNetworkAvailable())
+                    Synchronize();
+            };
+
             // And synchronize on startup or resume.
-            Synchronize();
+            if (networkAvailable)
+                Synchronize();
         }
 
         public void InitializeDesignData()
