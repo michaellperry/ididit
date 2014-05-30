@@ -9,6 +9,149 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+    	<StackPanel Margin="3,81,4,0" Orientation="Horizontal" VerticalAlignment="Top">
+    		<Grid Background="{ThemeResource PhoneAccentBrush}" HorizontalAlignment="Left" Height="105" Margin="6" VerticalAlignment="Top" Width="86">
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition Height="Auto"/>
+    			</Grid.RowDefinitions>
+    			<TextBlock TextWrapping="Wrap" Text="Mon" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource PhoneMidBrush}" Margin="13,0,13,0.167"/>
+    			<TextBlock TextWrapping="Wrap" Text="26" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Margin="0,8"/>
+    		</Grid>
+    		<Grid Background="{ThemeResource PhoneAccentBrush}" HorizontalAlignment="Left" Height="105" Margin="6" VerticalAlignment="Top" Width="86">
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition Height="Auto"/>
+    			</Grid.RowDefinitions>
+    			<TextBlock TextWrapping="Wrap" Text="Tue" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource PhoneMidBrush}" Margin="13,0,13,0.167"/>
+    			<TextBlock TextWrapping="Wrap" Text="27" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Margin="0,8"/>
+    		</Grid>
+    		<Grid Background="{ThemeResource PhoneAccentBrush}" HorizontalAlignment="Left" Height="105" Margin="6" VerticalAlignment="Top" Width="86">
+    			<Grid.RowDefinitions>
+    				<RowDefinition/>
+    				<RowDefinition Height="Auto"/>
+    			</Grid.RowDefinitions>
+    			<TextBlock TextWrapping="Wrap" Text="Wed" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource PhoneMidBrush}" Margin="13,0,13,0.167"/>
+    			<TextBlock TextWrapping="Wrap" Text="28" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Margin="0,8"/>
+    		</Grid>
+    		<Border HorizontalAlignment="Left" VerticalAlignment="Top" Padding="6" Background="{ThemeResource PhoneMidBrush}">
+    			<Grid Background="{ThemeResource PhoneAccentBrush}" Width="86" Height="105">
+    				<Grid.RowDefinitions>
+    					<RowDefinition/>
+    					<RowDefinition Height="Auto"/>
+    				</Grid.RowDefinitions>
+    				<TextBlock TextWrapping="Wrap" Text="Thur" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{ThemeResource PhoneMidBrush}" Margin="13,0,13,0.167"/>
+    				<TextBlock TextWrapping="Wrap" Text="29" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Margin="0,8"/>
+    			</Grid>
+
+    		</Border>
+
+    	</StackPanel>
+    	<Grid HorizontalAlignment="Left" Height="249" Margin="10,248,0,0" VerticalAlignment="Top" Width="380">
+    		<Button HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="164" Background="#FFB20018" BorderBrush="{x:Null}" BorderThickness="0">
+    			<Grid>
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition Width="40"/>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="6">
+                        <Viewbox>
+                            <Grid>
+                                <Grid Width="256" Height="256" Visibility="Collapsed" />
+                                <Path Data="M17.916605,8.7110003L28.421749,8.7110003C29.098745,8.7110004,29.702942,9.0208137,30.10404,9.5052485L37.357903,17.856608C37.808399,18.255227 38.092297,18.838576 38.092297,19.489375 38.092297,20.689972 37.117001,21.66397 35.915108,21.66397 35.238113,21.66397 34.635216,21.35657 34.235516,20.869772L27.502455,13.0963 23.624874,13.11455 38.447697,30.299448 48.472443,30.270748C48.705441,30.265549 48.94244,30.286348 49.18074,30.338549 50.685932,30.674349 51.613026,32.150845 51.275829,33.658741 50.978928,34.979038 49.797935,35.867035 48.498444,35.843735L36.843605,35.825436C34.372215,35.913935,33.443821,34.768137,33.443821,34.768137L27.700354,28.356552 21.018089,34.854038 23.726475,46.903509C23.783773,47.13011 23.814974,47.36701 23.814974,47.609209 23.814974,49.153505 22.56238,50.406 21.018089,50.406 19.665195,50.406 18.539001,49.447805 18.276003,48.174307L14.977721,33.481741C14.276025,31.187347,15.511618,30.039049,15.511618,30.039049L21.391787,24.158763 14.972621,16.736921 10.867143,20.864572C10.867143,20.864572,9.2330418,22.585867,7.2018018,20.554771L0.50781,13.812428C0.19140498,13.424429 -3.5527137E-15,12.93224 0,12.390561 -3.5527137E-15,11.145805 1.0051847,10.138057 2.2512681,10.138057 2.8007653,10.138057 3.3046722,10.338557 3.6952906,10.666686L9.2460413,16.208293 15.945215,9.5130004C16.451712,9.0181897,17.147108,8.7110004,17.916605,8.7110003z M12.61438,0C15.002446,0 16.940001,2.2109113 16.940001,4.9398754 16.940001,7.6690897 15.002446,9.8800006 12.61438,9.8800006 10.226314,9.8800006 8.29,7.6690897 8.29,4.9398754 8.29,2.2109113 10.226314,0 12.61438,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="138" Height="138" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <RotateTransform Angle="0" />
+                                            <ScaleTransform ScaleX="-1" ScaleY="1" />
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Grid>
+                        </Viewbox>
+                    </ContentPresenter>
+    				<TextBlock TextWrapping="Wrap" Text="Running" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    			</Grid>
+    		</Button>
+    		<Button HorizontalAlignment="Left" Height="38" Margin="200,10,0,0" VerticalAlignment="Top" Width="170" Background="#FFB20018" BorderBrush="{x:Null}" BorderThickness="0">
+    			<Grid>
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition Width="40"/>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="6">
+                        <Viewbox>
+                            <Grid>
+                                <Grid Width="256" Height="256" Visibility="Collapsed" />
+                                <Path Data="M44.112489,26.84L52.677539,26.84 52.703437,26.84 61.272486,26.84C61.272486,26.84,62.466478,27.0697,62.138382,29.934993L61.936682,40.056062C61.936682,40.056062,65.570559,43.386751,61.739985,45.516346L53.711331,61 53.711331,48.446535 53.711331,45.918043C53.711331,45.918043,58.408005,42.819054,52.745238,40.99156L52.703437,41.01436 52.677539,41.00136C46.975772,42.819054,51.670946,45.918043,51.670946,45.918043L51.670946,48.446535 51.670946,61 43.643693,45.516346C39.818215,43.386751,43.447195,40.056062,43.447195,40.056062L43.247997,29.934993C42.935435,27.24878,43.968734,26.879008,44.099118,26.843279L44.10477,26.841893 44.106989,26.841235C44.110211,26.840372,44.111894,26.840001,44.111894,26.840001z M43.352716,21.477L62.002682,21.477C63.10289,21.476999 63.999998,22.370021 63.999998,23.4734 63.999998,24.57728 63.10289,25.471001 62.002682,25.471001L43.352716,25.471001C42.256307,25.471001 41.357999,24.57728 41.357999,23.4734 41.357999,22.370021 42.256307,21.476999 43.352716,21.477z M0,11.186L9.1609993,11.186 9.1609993,18.642961 9.1609993,24.54273 9.1609993,45.637718C9.1609993,48.094706 7.1141434,49.083 4.583107,49.083 2.0520554,49.083 0,47.094709 0,44.633823L0,24.54273 0,18.642961z M20.776012,10.210217C19.631411,10.210217 18.705708,11.085309 18.705708,12.165299 18.705708,13.247291 19.631411,14.121683 20.776012,14.121683L39.65766,14.121683C40.110762,14.121683,40.526063,13.982985,40.867265,13.751186L41.298165,13.356689C41.567765,13.026592 41.727966,12.615796 41.727965,12.165299 41.727966,11.085309 40.802263,10.210217 39.65766,10.210217z M14.835999,0L55.741001,0 55.741001,18.043451 55.741001,18.887144 43.084669,18.887144C42.588568,18.887144 42.114567,18.986743 41.665466,19.135342 41.541765,18.19775 40.807363,17.466056 39.882861,17.466056L21.040415,17.466056C20.030012,17.466056 19.20841,18.329349 19.20841,19.39514 19.20841,20.462131 20.030012,21.324624 21.040415,21.324624L21.126215,21.324624C21.169313,21.325324,21.205715,21.348124,21.252714,21.348124L30.139337,21.348124 30.139337,21.324624 39.062559,21.324624C38.716158,21.968719 38.502758,22.693813 38.502758,23.473207 38.502758,25.060993 39.31256,26.460082 40.544362,27.284974 40.351662,28.030369 40.274862,28.948361 40.395862,30.102552L40.572963,39.082377C39.790461,40.072669 38.841259,41.713156 39.070259,43.64414 39.194059,44.698231 39.712261,46.13772 41.404965,47.329109L41.877666,48.247002 36.114552,48.247002 30.139337,48.247002 14.835999,48.247002z" Stretch="Uniform" Fill="#FFFFFFFF" Width="138" Height="138" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Grid>
+                        </Viewbox>
+                    </ContentPresenter>
+    				<TextBlock TextWrapping="Wrap" Text="Blogging" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    			</Grid>
+    		</Button>
+    		<Button HorizontalAlignment="Left" Height="33" Margin="10,83,0,0" VerticalAlignment="Top" Width="164" Background="#FFB20018" BorderBrush="{x:Null}" BorderThickness="0">
+    			<Grid>
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition Width="40"/>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="6">
+    					<Viewbox>
+						  <Grid>
+							<Grid Width="256" Height="256" Visibility="Collapsed" />
+							<Path Data="M14.465599,54.951001C16.947565,54.951001 18.961999,56.964578 18.961999,59.441151 18.961999,61.922825 16.947565,63.930001 14.465599,63.930001 11.995435,63.930001 9.9809996,61.922825 9.980999,59.441151 9.9809996,56.964578 11.995435,54.951001 14.465599,54.951001z M29.333699,54.951C31.803744,54.951001 33.818,56.964578 33.818,59.441151 33.818,61.922823 31.803744,63.930001 29.333699,63.930001 26.852054,63.930001 24.838999,61.922823 24.838999,59.441151 24.838999,56.964578 26.852054,54.951001 29.333699,54.951z M29.704,35.043001L29.704,39.488754 33.797355,39.488754C33.893655,39.488754,33.980956,39.456155,34.068156,39.406756L35.437119,35.043001z M19.799,35.043001L19.799,39.488754 26.481999,39.488754 26.481999,35.043001z M12.047508,35.043001L14.117505,39.488754 16.577,39.488754 16.577,35.043001z M29.704,27.614L29.704,31.826 36.446332,31.826 37.767688,27.614z M19.799,27.614L19.799,31.826 26.481999,31.826 26.481999,27.614z M8.5884736,27.614L10.549633,31.826 16.577,31.826 16.577,27.614z M29.704,19.946346L29.704,24.393 38.778155,24.393 39.956201,20.637825C40.043502,20.365032,40.098203,20.137138,40.130702,19.946346z M19.799,19.946346L19.799,24.393 26.481999,24.393 26.481999,19.946346z M5.1265464,19.946346C5.1590767,20.120842,5.2124772,20.316734,5.2892985,20.528328L7.0887363,24.393 16.577,24.393 16.577,19.946346z M52.942346,0L61.530885,0C62.901994,0 64.000997,1.1049881 64.000997,2.4760246 64.000997,3.8425522 62.901994,4.9525375 61.530885,4.9525375L52.942346,4.9525375C50.917634,4.9525375 50.25483,5.3281593 49.469628,7.994854 48.642823,10.81916 37.878472,47.46256 37.878472,47.46256 37.856372,47.544061 37.823771,47.625961 37.791272,47.702162 37.681872,47.979463 34.938359,54.487999 28.071126,54.487999L8.6647925,54.487999C7.2936854,54.487999 6.1830001,53.377893 6.1830006,52.011986 6.1830001,50.646178 7.2936854,49.536171 8.6647925,49.536171L28.071126,49.536171C31.326341,49.536171 32.90455,46.477455 33.17665,45.911752 33.241103,45.690478 33.373813,45.236938 33.563083,44.590962L33.565415,44.582999 13.4847,44.582999C10.939081,44.582999,9.7528717,42.443665,9.5132698,41.644189L0.61998272,22.558968C-0.75240803,19.255066 -0.076622009,14.858002 4.996326,14.858002 10.709879,14.858002 38.694491,14.858002 40.948409,14.858002 41.302005,14.858002 41.680621,14.90052 42.061448,14.993279L42.239591,15.041401 42.274884,14.921314C43.544881,10.600559 44.498216,7.3602028 44.724904,6.5964775 45.683209,3.3308296 47.413617,0 52.942346,0z" Stretch="Uniform" Fill="#FFFFFFFF" Width="138" Height="138" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+							  <Path.RenderTransform>
+								<TransformGroup>
+								  <TransformGroup.Children>
+									<RotateTransform Angle="0" />
+									<ScaleTransform ScaleX="1" ScaleY="1" />
+								  </TransformGroup.Children>
+								</TransformGroup>
+							  </Path.RenderTransform>
+							</Path>
+						  </Grid>
+						</Viewbox>
+    				</ContentPresenter>
+    				<TextBlock TextWrapping="Wrap" Text="Shopping" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    			</Grid>
+    		</Button>
+    		<Button HorizontalAlignment="Left" Height="20" Margin="200,83,0,0" VerticalAlignment="Top" Width="170" Background="#FFB20018" BorderBrush="{x:Null}" BorderThickness="0">
+    			<Grid>
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition Width="40"/>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="6">
+    					<Viewbox>
+						  <Grid>
+							<Grid Width="744" Height="1052" Visibility="Collapsed" />
+							<Path Data="M22.803,42.135 C25.0937,42.6844 30.038,42.6844 30.038,42.6844 L27.7488,62.193 L27.7418,62.193 L27.747,62.2837 C27.747,63.2319 26.867,64 25.7799,64 C24.6927,64 23.81,63.2319 23.81,62.2837 L23.8152,62.193 L23.8095,62.193 z M10.0745,37.099 C13.0966,39.2058 17.31,40.763 17.31,40.763 L3.03928,46.3071 L2.91948,46.3807 C2.63944,46.5345 2.31857,46.622 1.97761,46.622 C0.885298,46.622 0,45.7265 0,44.6249 C0,43.864 0.418442,43.2041 1.03491,42.8659 L1.19725,42.787 L1.192,42.7762 z M17.3006,12.7841 C20.3861,15.1673 22.1361,16.9173 22.1361,16.9173 C25.511,17.3041 28.2045,17.4299 29.5505,16.4746 L32.841,15.5412 C34.0027,14.9189 35.0396,15.3144 35.5982,15.7919 C36.1619,17.0298 35.7404,17.7182 34.3856,18.9173 C28.362,21.7116 26.8824,25.9173 26.8824,25.9173 C23.342,30.6779 29.6721,39.75 29.6721,39.75 C23.048,37.492 12.2111,34.3929 12.2111,34.3929 C22.6512,29.3852 20.2796,22.9479 20.2796,22.3502 C20.9961,19.7968 12.2927,14.1222 11.9648,13.2017 C10.5594,12.1321 11.047,10.5805 11.4571,10.0219 C12.759,8.62957 13.7939,10.1107 14.3849,10.6568 z M26.7423,0 C30.2473,0 33.091,2.84366 33.091,6.35136 C33.091,9.85638 30.2473,12.7 26.7423,12.7 C23.2345,12.7 20.392,9.85638 20.392,6.35136 C20.392,2.84366 23.2345,0 26.7423,0 z" Stretch="Uniform" Fill="#FFFFFFFF" Margin="0.245,0.083,-3.18,-0.25" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False">
+							  <Path.RenderTransform>
+								<TransformGroup>
+								  <TransformGroup.Children>
+									<RotateTransform Angle="0" />
+									<ScaleTransform ScaleX="1" ScaleY="1" />
+								  </TransformGroup.Children>
+								</TransformGroup>
+							  </Path.RenderTransform>
+							</Path>
+						  </Grid>
+						</Viewbox>
+    				</ContentPresenter>
+    				<TextBlock TextWrapping="Wrap" Text="Curves" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    			</Grid>
+    		</Button>
+    		<Button Content="Something Else..." HorizontalAlignment="Left" Height="40" Margin="84,160,0,0" VerticalAlignment="Top" Width="210" Background="#FFB20018" BorderBrush="{x:Null}" BorderThickness="0"/>
+    	</Grid>
 
     </Grid>
 </Page>
