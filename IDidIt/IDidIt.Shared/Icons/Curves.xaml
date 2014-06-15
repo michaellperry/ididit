@@ -1,0 +1,27 @@
+﻿<UserControl
+    x:Class="IDidIt.Icons.Curves"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IDidIt.Icons"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+    	<Viewbox>
+    		<Grid Height="256" Width="256">
+    			<Path Data="M22.803,42.135 C25.0937,42.6844 30.038,42.6844 30.038,42.6844 L27.7488,62.193 L27.7418,62.193 L27.747,62.2837 C27.747,63.2319 26.867,64 25.7799,64 C24.6927,64 23.81,63.2319 23.81,62.2837 L23.8152,62.193 L23.8096,62.193 z M10.0745,37.099 C13.0966,39.2058 17.31,40.763 17.31,40.763 L3.03928,46.3071 L2.91948,46.3807 C2.63944,46.5345 2.31857,46.622 1.97761,46.622 C0.885298,46.622 0,45.7265 0,44.6249 C0,43.864 0.418442,43.2041 1.03491,42.8659 L1.19725,42.787 L1.192,42.7762 z M14.3849,10.6568 C21.5252,17.2127 26.375,16.4432 26.375,16.4432 C29.75,16.83 37.087,11.7527 38.433,10.7973 L38.4382,10.7937 C38.4382,10.7937 41.1859,9.02626 42.6098,10.1322 C43.9371,11.2028 41.7316,13.6652 40.6791,14.1393 C34.6555,16.9336 31.5041,22.5495 31.5041,22.5495 C27.9637,27.31 36.6317,38.0542 36.6317,38.0542 C21.125,41.4733 12.2111,34.3929 12.2111,34.3929 C22.6512,29.3852 19.7815,22.5495 19.7815,22.5495 C17.8283,17.7866 11.784,13.4508 11.784,13.4508 C11.784,13.4508 8.84057,11.6468 9.84929,10.2178 C11.2195,8.56911 13.855,10.1737 14.3849,10.6568 z M26.7423,0 C30.2473,0 33.091,2.84366 33.091,6.35136 C33.091,9.85638 30.2473,12.7 26.7423,12.7 C23.2345,12.7 20.392,9.85638 20.392,6.35136 C20.392,2.84366 23.2345,0 26.7423,0 z" Stretch="Uniform" Fill="#FFFFFFFF" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False">
+    				<Path.RenderTransform>
+    					<TransformGroup>
+    						<RotateTransform Angle="0" />
+    						<ScaleTransform ScaleX="1" ScaleY="1" />
+    					</TransformGroup>
+    				</Path.RenderTransform>
+    			</Path>
+    		</Grid>
+    	</Viewbox>
+
+    </Grid>
+</UserControl>
